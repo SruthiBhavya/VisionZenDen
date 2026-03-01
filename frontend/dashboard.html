@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>VisionZenDen | Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="nav">
+    <div class="nav-inner">
+        <h2>VisionZenDen</h2>
+
+        <div class="nav-links">
+            <a href="index.html">Focus</a>
+            <a href="dashboard.html">Dashboard</a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+    <h1>Analytics Dashboard</h1>
+    <p style="color:#94a3b8;">Track your consistency</p>
+
+    <div class="card">
+        <h3>Total Stats</h3>
+        <p>Total Focus: <span id="totalMinutes">0</span> mins</p>
+        <p>Sessions: <span id="totalSessions">0</span></p>
+    </div>
+
+    <div class="card">
+        <h3>Current Streak</h3>
+        <p>
+            <span id="streak">0</span> days
+            <span id="fire"></span>
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Weekly Progress</h3>
+
+        <div class="bar">
+            <div class="fill" id="weeklyBar" style="width:0%"></div>
+        </div>
+
+        <p id="weeklyText" style="color:#94a3b8;">0 / 300 mins</p>
+    </div>
+
+</div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>
